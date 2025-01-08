@@ -29,9 +29,10 @@ body {
     color : var(--primary-color) !important;
 }
 
-.main-container{
-    max-width: 1520px;
+.container{
+    max-width: 1920px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 
@@ -66,6 +67,11 @@ body {
     font-weight: 400;
     font-size: 16px;
 }
+.nav-links ul li a:hover{
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
 .nav-links ul li:last-child{
     border-right: none;
 }
@@ -100,3 +106,71 @@ body {
     cursor: pointer;
     font-weight: 600;
 }
+
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu-icon img{
+    width:  30px;
+    height: 30px; 
+}
+
+.menu-icon-1.disabled{
+    display: none;
+}
+.menu-icon-2{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------- 
+Media query
+---------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------
+For mobile:  
+---------------------------------------------------------------------------*/
+@media only screen and (max-width:480px){
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .nav-bar{
+        
+    }
+    .nav-links{
+        display: none;
+    }
+
+    .navbar-right{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+}
+
+/*--------------------------------------------------- 
+For ipads, tablet:  
+---------------------------------------------------*/
+@media only screen and (min-width:481px) and (max-width:768px) {}
+
+/*-----------------------------------------
+ For Small screen, laptop:  
+-----------------------------------------*/
+@media only screen and (min-width:769px) and (max-width:1024px) {}

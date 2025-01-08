@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="main-container">
+    <div class="container">
       <header>
         <nav class="nav-bar">
           <div>
@@ -39,8 +39,31 @@
               />
             </div>
           </div>
+          <div class="mobile-menu-icon">
+            <div class="menu-icon-1">
+              <img src="/assets/img/menu-icon-1.png" alt="burger menu icon" />
+            </div>
+            <div class="menu-icon-2">
+              <img src="/assets/img/menu-icon-2.png" alt="burger menu icon" />
+            </div>
+          </div>
         </nav>
       </header>
     </div>
+
+    <script>
+      const menu_icon_one = document.querySelector(".menu-icon-1");
+      const menu_icon_two = document.querySelector(".menu-icon-2");
+      const nav = document.querySelector(".nav-bar");
+
+      menu_icon_one.addEventListener("click", () => {
+        menu_icon_one.style.display = "none";
+        menu_icon_two.style.display = "block";
+      });
+      menu_icon_two.addEventListener("click", () => {
+        menu_icon_two.style.display = "none";
+        menu_icon_one.style.display = "block";
+      })
+    </script>
   </body>
 </html>
