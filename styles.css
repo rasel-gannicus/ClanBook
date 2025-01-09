@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1320px;
   width: 95%;
   margin: 0 auto;
   padding: 0 20px;
@@ -42,6 +42,15 @@ body {
   border-radius: 8px;
   font-weight: 500;
   font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  color: #1b2533;
 }
 
 /* -----------------------------
@@ -248,6 +257,80 @@ body {
   max-width: 778px;
 }
 
+/* -----------------------------
+   'What does an clanbook is' section
+----------------------------- */
+
+.what-does-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 0;
+}
+
+.what-does-section h1 {
+  font-size: 48px;
+  line-height: 62px;
+  font-weight: 800;
+}
+
+.what-does-section p {
+  color: #445164;
+  font-weight: 400;
+}
+
+.what-does-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.what-does-header p {
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+.what-does-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+  position: relative;
+}
+
+.what-does-left {
+  position: relative;
+  max-width: 514px;
+}
+
+.what-does-main img:first-child {
+  width: 100%;
+  position: relative;
+}
+.what-does-main img:last-child {
+  position: absolute;
+  width: 100%;
+  max-width: 259px;
+  top: 0;
+  right: -80px;
+}
+
+.what-does-right button {
+  margin-top: 50px;
+}
+  
+.what-does-right ol{
+  margin: 0 20px;
+}
+.what-does-right ol li {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400 !important;
+  color: #445164;
+}
+
 /*-------------------------------------------------------------------------- 
 Media query
 ---------------------------------------------------------------------------*/
@@ -301,7 +384,7 @@ For mobile:
   }
 
   /* --- banner section --- */
-  .banner-section-parent{
+  .banner-section-parent {
     padding: 20px 0;
   }
   .banner-section {
@@ -318,8 +401,29 @@ For mobile:
     font-weight: 800;
     line-height: normal;
   }
-  .banner-right{
+  .banner-right {
     text-align: center;
+  }
+
+  /* --- 'What Does Section' section --- */
+  .what-does-section {
+    padding: 90px 0;
+  }
+
+  .what-does-main img:first-child {
+    width: 100%;
+    position: relative;
+  }
+  .what-does-main img:last-child {
+    position: absolute;
+    width: 100%;
+    max-width: 159px;
+    top: 0;
+    right: 0px;
+  }
+
+  .what-does-right ol{
+    margin: 0 20px;
   }
 }
 
@@ -373,7 +477,7 @@ For ipads, tablet:
   }
 
   /* --- banner section --- */
-  .banner-section-parent{
+  .banner-section-parent {
     padding: 20px 0;
   }
   .banner-section {
@@ -391,12 +495,38 @@ For ipads, tablet:
     line-height: normal;
   }
 
-  .banner-right{
+  .banner-right {
     text-align: center;
   }
   .banner-section img {
     width: 100%;
     max-width: 478px;
+  }
+
+  /* --- 'What Does Section' section --- */
+  .what-does-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .what-does-section {
+    padding: 90px 0;
+  }
+
+  .what-does-main img:first-child {
+    width: 100%;
+    position: relative;
+  }
+  .what-does-main img:last-child {
+    position: absolute;
+    width: 100%;
+    max-width: 259px;
+    top: 0;
+    right: 0px;
+  }  
+  .what-does-right ol{
+    margin: 0 20px;
   }
 }
 
@@ -404,4 +534,35 @@ For ipads, tablet:
  For Small screen, laptop:  
 -----------------------------------------*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* --- 'What Does Section' section --- */
+  .what-does-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0;
+  }
+  .what-does-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 514px;
+    margin: 0 auto;
+  }
+  .what-does-section {
+    padding: 90px 0;
+  }
+
+  .what-does-main img:first-child {
+    width: 100%;
+    position: relative;
+  }
+  .what-does-main img:last-child {
+    position: absolute;
+    width: 100%;
+    max-width: 259px;
+    top: 0;
+    right: 0px;
+  }
 }
