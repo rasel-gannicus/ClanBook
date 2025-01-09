@@ -19,7 +19,6 @@ body {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
-  max-width: 1120px;
   margin: 0 auto;
   background-color: white;
 }
@@ -30,8 +29,19 @@ body {
 
 .container {
   max-width: 1920px;
+  width: 95%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.primary-button{
+  border: none;
+  color: white;
+  background-color: var(--primary-color);
+  padding : 15px 32px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 /* -----------------------------
@@ -174,6 +184,87 @@ body {
   display: none;
 
 }
+
+
+/* -----------------------------
+   Banner section
+----------------------------- */
+.banner-section-parent{
+  background-image: url("/assets/img/banner-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner-section-parent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F5F6F7F5;
+  z-index: 1; /* Ensure it sits above the image */
+}
+.banner-section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between ;
+  padding: 50px 0;
+}
+
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 39px;
+}
+
+.banner-left h1{
+  font-size: 68px;
+  font-weight: 800;
+  line-height: 85px;
+}
+
+.banner-left p{
+  font-size: 18px;
+  line-height: 26px;
+  color: #445164;
+  font-weight: 400;
+}
+
+.banner-left, .banner-right{
+  z-index: 100;
+}
+
+.banner-right{
+  text-align: right;
+}
+
+.banner-section img{
+  width: 100%;
+  max-width: 578px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-------------------------------------------------------------------------- 
 Media query

@@ -13,28 +13,16 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <!-- header -->
-      <header>
+    <div class="">
+      <!------------------------------- header starts here ----------------------------->
+      <header class="container">
         <nav class="nav-bar">
-          <div>
+          <div class="navbar-left">
             <h2>Clan<span class="text-primary-color">Book</span></h2>
           </div>
 
           <!-- for desktop view -->
-          <div class="nav-links">
-            <ul>
-              <li><a href="#" class="text-primary-color">Home</a></li>
-              <li><a href="#">Who Are We</a></li>
-              <li><a href="#">Build A Book</a></li>
-              <li><a href="#">Testimonies</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-
-          <!-- for mobile view -->
-          <div class="nav-links-2 nav-links">
+          <div class="navbar-mid nav-links">
             <ul>
               <li><a href="#" class="text-primary-color">Home</a></li>
               <li><a href="#">Who Are We</a></li>
@@ -84,7 +72,40 @@
             </div>
           </div>
         </nav>
+
+        <!-- for mobile view -->
+        <div class="nav-links-2 nav-links">
+          <ul>
+            <li><a href="#" class="text-primary-color">Home</a></li>
+            <li><a href="#">Who Are We</a></li>
+            <li><a href="#">Build A Book</a></li>
+            <li><a href="#">Testimonies</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
       </header>
+
+      <!------------------------------- header ends here ----------------------------->
+
+      <!------------------------------- Banner starts here ----------------------------->
+      <section class="banner-section-parent">
+        <div class="banner-section container">
+          <div class="banner-left">
+            <h1>Years Of <span class="text-primary-color">Memories,<br>Immortalized </span> In 5 Minutes</h1>
+            <p>
+              Explore the art of printing to transform conversations into
+              unforgettable tales. Welcome to ClanBooker where each page
+              captures your dearest moments of life.
+            </p>
+            <button class="primary-button">Read More Here</button>
+          </div>
+          <div class="banner-right">
+            <img src="/assets/img/banner-image.png" alt="banner image" />
+          </div>
+        </div>
+      </section>
+      <!------------------------------- Banner ends here ----------------------------->
     </div>
 
     <script src="script.js"></script>
