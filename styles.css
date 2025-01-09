@@ -45,9 +45,7 @@ body {
   padding: 20px 0;
 }
 
-.nav-links{
-    /* transform: -20%; */
-}
+
 
 .nav-links-2{
   display: none;
@@ -94,7 +92,6 @@ body {
   height: 56px;
   border-radius: 50%;
   cursor: pointer;
-  /* overflow: hidden; */
   position: relative;
 }
 
@@ -118,7 +115,7 @@ body {
   position: absolute;
   top: 70px;
   right: 20px;
-  background: #1f2937;
+  background: var(--primary-color);
   width: 200px;
   border-radius: 5px;
   padding: 30px 10px;  
@@ -127,9 +124,13 @@ body {
   transform-origin: top right; 
 
 }
+
+.profile-short-menu img{
+  width: 30px;
+  height: 30px;
+}
 .profile-short-menu.active{
-  scale: 1;
-  
+  scale: 1;  
 }
 
 .profile-short-menu ul{
@@ -144,12 +145,18 @@ body {
   list-style: none;
   font-size: 18px;
   padding-right: 20px;
+  cursor: pointer;
 }
+
 .profile-short-menu ul li a {
   text-decoration: none;
   color: white;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 16px;  
+  display: flex ;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .mobile-menu-icon {
@@ -214,7 +221,7 @@ For mobile:
     border-right: none;
   }
 
-  .navbar-right {
+  .navbar-right button {
     display: none;
   }
   .mobile-menu-icon {
@@ -264,7 +271,7 @@ For ipads, tablet:
     border-right: none;
   }
 
-  .navbar-right {
+  .navbar-right button{
     display: none;
   }
   .mobile-menu-icon {

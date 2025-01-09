@@ -30,22 +30,22 @@ document.addEventListener("click", (e) => {
   }
 });
 
-
-
-
-
-// --- opening profile menu
+// ------------------------------------------------
+// ---- opening profile menu ---
+// ------------------------------------------------
 const profile_icon = document.querySelector(".navbar-profile-menu");
 const profile_menu = document.querySelector(".profile-short-menu");
 
 profile_icon.addEventListener("click", (e) => {
-    profile_menu.classList.toggle("active");
+  e.stopPropagation();
+  profile_menu.classList.toggle("active");
 });
 
 // --- hide menu when clicking outside ---
 document.addEventListener("click", (e) => {
-    const isClickInsideNav = profile_icon.contains(e.target);
-    if (!isClickInsideNav) {      
+  e.stopPropagation();
+  const isClickInsideNav = profile_icon.contains(e.target);
+  if (!isClickInsideNav) {
     profile_menu.classList.remove("active");
-    }
-  });
+  }
+});
