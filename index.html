@@ -20,7 +20,21 @@
           <div>
             <h2>Clan<span class="text-primary-color">Book</span></h2>
           </div>
+
+          <!-- for desktop view -->
           <div class="nav-links">
+            <ul>
+              <li><a href="#" class="text-primary-color">Home</a></li>
+              <li><a href="#">Who Are We</a></li>
+              <li><a href="#">Build A Book</a></li>
+              <li><a href="#">Testimonies</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+
+          <!-- for mobile view -->
+          <div class="nav-links-2">
             <ul>
               <li><a href="#" class="text-primary-color">Home</a></li>
               <li><a href="#">Who Are We</a></li>
@@ -54,15 +68,19 @@
     <script>
       const menu_icon_one = document.querySelector(".menu-icon-1");
       const menu_icon_two = document.querySelector(".menu-icon-2");
+      const nav_links = document.querySelector(".nav-links-2");
       const nav = document.querySelector(".nav-bar");
 
       menu_icon_one.addEventListener("click", () => {
         menu_icon_one.style.display = "none";
         menu_icon_two.style.display = "block";
+        nav_links.style.transform = "translateX(-20%)";
       });
+
       menu_icon_two.addEventListener("click", () => {
         menu_icon_two.style.display = "none";
         menu_icon_one.style.display = "block";
+        nav_links.style.transform = "translateX(-100%)";
       })
     </script>
   </body>
