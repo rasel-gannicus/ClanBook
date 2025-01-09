@@ -385,8 +385,48 @@ h3 {
   font-weight: 400;
 }
 
-.join-community-section button{
+.join-community-section button {
   margin-top: 40px;
+}
+
+/* -----------------------------
+   'Experience' section
+----------------------------- */
+.experience-section {
+  padding: 90px 0;
+}
+.experience-section-header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.experience-section-header p {
+  font-size: 18px;
+  color: #445164;
+  font-weight: 400;
+}
+
+.experience-section-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-div {
+  background-color: #f9fafc;
+  border: 1px solid #eaecf0;
+  border-radius: 10px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-div img {
+  height: 104px;
 }
 
 /*-------------------------------------------------------------------------- 
@@ -493,6 +533,12 @@ For mobile:
 
   .join-community-description {
     padding: 70px 15px;
+  }
+
+  /* --- Experience Section --- */
+  .experience-section-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -608,6 +654,12 @@ For ipads, tablet:
   .join-community-description {
     padding: 70px 35px;
   }
+
+    /* --- Experience Section --- */
+  .experience-section-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*-----------------------------------------
@@ -646,7 +698,6 @@ For ipads, tablet:
     right: 0px;
   }
 
-
   /* --- Join Community Section --- */
   .join-community-section h1 {
     font-size: 32px;
@@ -654,7 +705,7 @@ For ipads, tablet:
     font-weight: 700;
   }
 
-.join-community-description {
-  padding: 70px 35px;
-}
+  .join-community-description {
+    padding: 70px 35px;
+  }
 }
