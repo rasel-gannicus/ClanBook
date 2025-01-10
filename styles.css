@@ -807,6 +807,18 @@ For mobile:
     font-size: 30px;
     font-weight: 700;
   }
+
+
+  /* --- Community Reviews Section --- */
+
+.community-section-main{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 }
 
 /*--------------------------------------------------- 
@@ -944,6 +956,17 @@ For ipads, tablet:
   .offer-section-left {
     padding: 60px 30px;
   }
+
+
+  /* --- Community Reviews Section --- */
+
+.community-section-main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
 }
 
 /*-----------------------------------------
