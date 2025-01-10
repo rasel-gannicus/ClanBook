@@ -266,7 +266,7 @@ h3 {
   font-size: 18px;
   line-height: 26px;
   color: #445164;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .banner-left,
@@ -303,7 +303,7 @@ h3 {
 
 .what-does-section p {
   color: #445164;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .what-does-header {
@@ -404,7 +404,7 @@ h3 {
 }
 
 .join-community-section p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   line-height: 26px;
   color: #445164 !important;
@@ -429,7 +429,7 @@ h3 {
 .experience-section-header p {
   font-size: 18px;
   color: #445164;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .experience-section-content {
@@ -507,6 +507,7 @@ h3 {
 .offer-section-left-item p {
   font-size: 18px;
   line-height: 26px;
+  font-weight: 300;
 }
 
 .offer-section-right {
@@ -546,7 +547,7 @@ h3 {
 
 .offer-section-right-img-content p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 24px;
   margin-top: 10px;
 }
@@ -572,6 +573,12 @@ h3 {
 .community-section-header {
   text-align: center;
   margin-bottom: 54px;
+}
+
+.community-section-header p{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .community-section-main{
@@ -617,7 +624,7 @@ h3 {
 
 .community-card-profile-header p {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   color: #445164;
 }
 
@@ -633,7 +640,7 @@ h3 {
 
 .rating-details p{
 font-size: 16px;
-font-weight: 400;
+font-weight: 300;
 line-height: 26px;
 color: #445164;
 }
