@@ -457,6 +457,7 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
 }
 
 .offer-section-left {
@@ -494,6 +495,60 @@ h3 {
   font-size: 18px;
   line-height: 26px;
 }
+
+.offer-section-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 534px;
+  /* gap: 24px; */
+}
+
+.offer-section-right-item{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.offer-section-right-img-content{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+
+.offer-section-right-img-content img{
+  width: 60px;
+}
+
+.offer-section-right-img-content h2 {
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.offer-section-right-img-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.offer-section-price{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.small-text{
+  font-size: 16px;
+  font-weight: 400;
+  color: #1b2533;
+}
+
 
 /*-------------------------------------------------------------------------- 
 Media query
