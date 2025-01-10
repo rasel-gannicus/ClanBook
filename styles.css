@@ -90,6 +90,11 @@ h3 {
   padding: 20px 0;
 }
 
+.navbar-left h1{
+  font-size: 38px;
+  font-weight: 700;
+}
+
 .nav-links-2 {
   display: none;
   /* translate: -200%; */
