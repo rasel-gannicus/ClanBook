@@ -661,6 +661,22 @@ For mobile:
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+
+  /* --- Offer Section --- */
+  
+.offer-section-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.offer-section-left {
+  padding: 60px 30px;
+}
+
 }
 
 /*--------------------------------------------------- 
