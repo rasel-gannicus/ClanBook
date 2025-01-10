@@ -468,7 +468,7 @@ h3 {
   background-color: white;
   min-height: 534px;
   border-radius: 8px;
-  border: 1px solid #EAECF0;
+  border: 1px solid #eaecf0;
 }
 
 .offer-section-left-content {
@@ -480,7 +480,7 @@ h3 {
   max-width: 481px;
 }
 
-.offer-section-left button{
+.offer-section-left button {
   margin-top: 60px;
 }
 
@@ -496,15 +496,15 @@ h3 {
   line-height: 26px;
 }
 
-.offer-section-right{
+.offer-section-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 534px;
-  /* gap: 24px; */
+  gap: 24px;
 }
 
-.offer-section-right-item{
+.offer-section-right-item {
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -513,14 +513,14 @@ h3 {
   border-radius: 8px;
 }
 
-.offer-section-right-img-content{
+.offer-section-right-img-content {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 30px;
 }
 
-.offer-section-right-img-content img{
+.offer-section-right-img-content img {
   width: 60px;
 }
 
@@ -538,17 +538,16 @@ h3 {
   margin-top: 10px;
 }
 
-.offer-section-price{
+.offer-section-price {
   font-size: 40px;
   font-weight: 700;
 }
 
-.small-text{
+.small-text {
   font-size: 16px;
   font-weight: 400;
   color: #1b2533;
 }
-
 
 /*-------------------------------------------------------------------------- 
 Media query
@@ -657,26 +656,52 @@ For mobile:
   }
 
   /* --- Experience Section --- */
+  .experience-section {
+    padding: 90px 0;
+  }
   .experience-section-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-
   /* --- Offer Section --- */
-  
-.offer-section-content {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-}
 
-.offer-section-left {
-  padding: 60px 30px;
-}
+  .offer-section-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
 
+  .offer-section-left {
+    padding: 60px 30px;
+  }
+
+  .offer-section-right-item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 8px;
+  }
+
+  .offer-section-right-img-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .offer-section-price {
+    font-size: 30px;
+    font-weight: 700;
+  }
 }
 
 /*--------------------------------------------------- 
@@ -793,9 +818,26 @@ For ipads, tablet:
   }
 
   /* --- Experience Section --- */
+  .experience-section {
+    padding: 90px 0;
+  }
   .experience-section-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* --- Offer Section --- */
+
+  .offer-section-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .offer-section-left {
+    padding: 60px 30px;
   }
 }
 
@@ -844,5 +886,23 @@ For ipads, tablet:
 
   .join-community-description {
     padding: 70px 35px;
+  }
+
+  .experience-section {
+    padding: 90px 0;
+  }
+
+  /* --- Offer Section --- */
+
+  .offer-section-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .offer-section-left {
+    padding: 60px 30px;
   }
 }
