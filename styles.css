@@ -66,6 +66,19 @@ h3 {
   font-weight: 400;
 }
 
+.copyright-section{
+  background-color: var(--primary-color);
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
 /* -----------------------------
    Header and Navigation
 ----------------------------- */
@@ -728,8 +741,6 @@ color: #445164;
 
  .footer-main{
   display: flex;
-
-  /* grid-template-columns: repeat(5, 1fr); */
   gap: 115px;
   margin: 60px 0;
  }
@@ -773,11 +784,17 @@ color: #445164;
   margin-bottom: 20px;
  }
 
- .footer-column h4{
+ .footer-column a{
   font-size: 16px;
   font-weight: 300;
   color: #445164;
   margin: 16px 0;
+  text-decoration: none;
+  display: block;
+ }
+
+ .footer-column a:hover{
+  color: var(--primary-color);
  }
 
  
@@ -971,6 +988,14 @@ For mobile:
   height: 64px;
  }
 
+  .footer-main{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin: 60px 0;
+ }
+ 
+
 }
 
 /*--------------------------------------------------- 
@@ -1142,12 +1167,23 @@ For ipads, tablet:
   height: 64px;
  }
 
+   .footer-main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  margin: 60px 0;
+ }
+
 }
 
 /*-----------------------------------------
  For Small screen, laptop:  
 -----------------------------------------*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-links {
+    scale: 0.8;
+  }
+
   /* --- 'What Does Section' section --- */
   .what-does-main {
     display: grid;
@@ -1213,6 +1249,13 @@ For ipads, tablet:
   position: relative;
   min-width: 266px;
   height: 64px;
+ }
+
+    .footer-main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  margin: 60px 0;
  }
 
 }
