@@ -47,6 +47,29 @@ body {
   display: block;
 }
 
+.button-with-icon {
+  border: none;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 15px 32px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.button-with-icon img{
+  width: 15px !important;
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px; */
+}
+
 h1,
 h2,
 h3 {
@@ -336,11 +359,11 @@ h3 {
   max-width: 514px;
 }
 
-.what-does-main img:first-child {
+.what-does-left img:first-child {
   width: 100%;
   position: relative;
 }
-.what-does-main img:last-child {
+.what-does-left img:last-child {
   position: absolute;
   width: 100%;
   max-width: 259px;
@@ -664,9 +687,15 @@ color: #445164;
   width: 122px;
   height: 48px;
   border-radius: 8px;
+  gap: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+ }
+
+ .community-section-button button:first-child img{
+  width: 15px !important;
+
  }
 
 .community-section-button button:last-child{
