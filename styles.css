@@ -53,6 +53,19 @@ h3 {
   color: #1b2533;
 }
 
+.common-heading-title h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 62px;
+}
+.common-heading-title p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #445164;
+  font-weight: 400;
+}
+
 /* -----------------------------
    Header and Navigation
 ----------------------------- */
@@ -429,6 +442,59 @@ h3 {
   height: 104px;
 }
 
+/* -----------------------------
+   'Offer' section
+----------------------------- */
+
+.offer-section {
+  background-color: #eaecf0;
+  min-height: 905px;
+  padding: 90px 0;
+}
+
+.offer-section-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  min-height: 534px;
+  border-radius: 8px;
+  border: 1px solid #EAECF0;
+}
+
+.offer-section-left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: start;
+  align-items: start;
+  max-width: 481px;
+}
+
+.offer-section-left button{
+  margin-top: 60px;
+}
+
+.offer-section-left-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.offer-section-left-item p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
 /*-------------------------------------------------------------------------- 
 Media query
 ---------------------------------------------------------------------------*/
@@ -655,7 +721,7 @@ For ipads, tablet:
     padding: 70px 35px;
   }
 
-    /* --- Experience Section --- */
+  /* --- Experience Section --- */
   .experience-section-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
