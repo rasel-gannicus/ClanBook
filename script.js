@@ -17,7 +17,7 @@ menu_icon_two.addEventListener("click", (e) => {
   e.stopPropagation();
   menu_icon_two.style.display = "none";
   menu_icon_one.style.display = "block";
-  nav_links.style.transform = "translateX(-100%)";
+  nav_links.style.transform = "translateX(-150%)";
 });
 
 // --- hide menu when clicking outside ---
@@ -26,7 +26,7 @@ document.addEventListener("click", (e) => {
   if (!isClickInsideNav) {
     menu_icon_two.style.display = "none";
     menu_icon_one.style.display = "block";
-    nav_links.style.transform = "translateX(-100%)";
+    nav_links.style.transform = "translateX(-150%)";
   }
 });
 
